@@ -8,7 +8,9 @@ set softtabstop=4
 set mouse=a
 
 call plug#begin()
+
 Plug 'tomlion/vim-solidity'
+Plug 'https://github.com/navarasu/onedark.nvim'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -25,4 +27,7 @@ if has('win32') || has('win64')
 else
   Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 endif
+
 call plug#end()
+
+colo onedark
